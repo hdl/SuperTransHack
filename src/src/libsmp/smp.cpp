@@ -94,6 +94,9 @@ int main(int argc, char**argv, char **envp)
   GLOG(SMPDBG_CONSTR, "Terminating simulation");
 
   for(int i = 0; i < nProcs; i++) {
+
+	fprintf (tmReport->getOutfile(), "core %d, cyclesOnCommit = %llu\n", i, transGCM->cyclesOnCommit[i]);
+	fprintf (tmReport->getOutfile(), "core %d, cyclesOnAbort = %llu\n", i, transGCM->cyclesOnAbort[i]);
     delete pr[i];
     delete ms[i];
   }
