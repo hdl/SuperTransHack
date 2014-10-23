@@ -1,0 +1,62 @@
+<Trans> tmTrace: IRCD :99999999999:0:6666:150457076:286316002
+<Trans> tmReport:ENDINST:0:150507053
+<Trans> tmReport:ENDINST:1:45842
+<Trans> tmReport:ENDINST:2:46496
+<Trans> tmReport:ENDINST:3:45539
+<Trans> tmReport:ENDINST:4:45842
+<Trans> tmReport:ENDINST:5:45842
+<Trans> tmReport:ENDINST:6:46128
+<Trans> tmReport:ENDINST:7:45346
+<Trans> tmReport:ENDINST:8:45543
+<Trans> tmReport:ENDINST:9:45842
+<Trans> tmReport:ENDINST:10:45649
+<Trans> tmReport:ENDINST:11:46608
+<Trans> tmReport:ENDINST:12:46027
+<Trans> tmReport:ENDINST:13:46413
+<Trans> tmReport:ENDINST:14:46305
+<Trans> tmReport:ENDINST:15:45539
+<Trans> tmReport:INSTCOUNT:153042186:
+#tableG,ALL,ALL,StatsInc,Commit,Abort,NTot,NAvg,NCyc,NCycAvg,ComCycTot,ComCycAvg,ComCycMin,ComCycMax,InstTotCm,InstAvgCm,InstMinCm,InstMaxCm,AbortCycTot,AbortCycAvg,AbortCycMin,AbortCycMax,InstTotAb,InstAvgAb,InstMinAb,InstMaxAb,R-Set,Loads,W-Set,Stores,BeginInstCount,BeginCycleCount,ANTot,ANAvg,ANCyc,ANCycAvg
+tableG,ALL,ALL,420,416,4,190,0.45,34029,179.10,6240309,15000.74,2711,45189,1809542,4349.86,650,7094,112671,28167.75,13868,40447,18359,4589.75,3721,4711,73.26,1573.57,16.49,775.51,0,0,6,1.50,1686,281.00
+
+Global Totals:
+          Trans ->   StatsInc:     420    Commit:       416    Abort:        4
+          Nacks ->   Total:        190    Avg:         0.45    Cyc:      34029    Avg:      179.10
+          CyclCM->   Total:    6240309    Avg:     15000.74    Min:       2711    Max:       45189
+          InstCM->   Total:    1809542    Avg:      4349.86    Min:        650    Max:        7094
+          CyclAB->   Total:     112671    Avg:     28167.75    Min:      13868    Max:       40447
+          InstAB->   Total:      18359    Avg:      4589.75    Min:       3721    Max:        4711
+          Memory->   R-Set:      73.26    Loads:    1573.57    W-Set:    16.49    Stores:   775.51
+
+core 0, cyclesOnCommit = 391622
+core 0, cyclesOnAbort = 14097
+core 1, cyclesOnCommit = 390060
+core 1, cyclesOnAbort = 0
+core 2, cyclesOnCommit = 430858
+core 2, cyclesOnAbort = 0
+core 3, cyclesOnCommit = 402815
+core 3, cyclesOnAbort = 0
+core 4, cyclesOnCommit = 398886
+core 4, cyclesOnAbort = 0
+core 5, cyclesOnCommit = 405947
+core 5, cyclesOnAbort = 0
+core 6, cyclesOnCommit = 401589
+core 6, cyclesOnAbort = 0
+core 7, cyclesOnCommit = 401150
+core 7, cyclesOnAbort = 0
+core 8, cyclesOnCommit = 378358
+core 8, cyclesOnAbort = 0
+core 9, cyclesOnCommit = 379354
+core 9, cyclesOnAbort = 0
+core 10, cyclesOnCommit = 383432
+core 10, cyclesOnAbort = 0
+core 11, cyclesOnCommit = 407017
+core 11, cyclesOnAbort = 0
+core 12, cyclesOnCommit = 349612
+core 12, cyclesOnAbort = 40330
+core 13, cyclesOnCommit = 355990
+core 13, cyclesOnAbort = 58907
+core 14, cyclesOnCommit = 436409
+core 14, cyclesOnAbort = 0
+core 15, cyclesOnCommit = 408943
+core 15, cyclesOnAbort = 0

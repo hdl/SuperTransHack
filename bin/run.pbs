@@ -7,4 +7,4 @@ SESC=/home/EE653-user3/zmao/SuperTransHack/bin
 echo $WORKSPACE
 cd $WORKSPACE
 $SESC/sesc.trans /home/EE653-user3/zmao/SuperTransHack/benchmarks/stamp/vacation.mips.tm -c16 -n2 -q90 -u98 -r16384 -t409
-ls | mail -s 'vacation.lazy' maoze365@gmail.com
+ls | mail -s 'vacation.eager' maoze365@gmail.com

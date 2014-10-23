@@ -1,0 +1,15 @@
+/home/EE653-user3/zmao/SuperTransHack/bin
+Initializing manager... done.
+Initializing clients... done.
+    Transactions        = 409
+    Clients             = 16
+    Transactions/client = 26
+    Queries/transaction = 2
+    Relations           = 16384
+    Query percent       = 90
+    Query range         = 14746
+    Percent user        = 98
+Running clients... CodeFlag: 0 -> 9
+done.
+Time = 0.000092
+Deallocating memory... done.
