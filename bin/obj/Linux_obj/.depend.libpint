@@ -1,0 +1,8 @@
+
+$(OBJ)/libpint.a:$(OBJ)/PPCDecoder.o
+$(OBJ)/PPCDecoder.o: /home/EE653-user3/zmao/SuperTransHack/src/src/libpint/PPCDecoder.cpp $(SRC_DIR)/libsuc/nanassert.h /home/EE653-user3/zmao/SuperTransHack/src/src/libpint/PPCDecoder.h /home/EE653-user3/zmao/SuperTransHack/src/src/libpint/PPCInsts.def /home/EE653-user3/zmao/SuperTransHack/src/src/libpint/PPCOpcodes.h $(SRC_DIR)/libll/InstType.h
+
+
+
+
+
