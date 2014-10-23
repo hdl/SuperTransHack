@@ -377,6 +377,7 @@ GCMFinalRet transCoherence::beginEE(int pid, icode_ptr picode)
       retVal.tuid = transState[pid].utid;
     }
 
+	cyclesOnBegin[pid] = globalClock;
     return retVal;
   }
 }
@@ -413,6 +414,8 @@ struct GCMFinalRet transCoherence::abortEE(thread_ptr pthread, int tid)
 //   {
     transState[pid].state = ABORTING;    
     retVal.ret = SUCCESS;
+
+	cyclesOnAbort[pid] += globalClock - cyclesOnBegin[pid];
     return retVal;
 //   }
 //   else{
@@ -473,6 +476,7 @@ struct GCMFinalRet transCoherence::commitEE(int pid, int tid)
       retVal.ret = SUCCESS;
       transState[pid].state = COMMITTED;
       retVal.tuid = transState[pid].utid;
+	  cyclesOnCommit[pid] += globalClock - cyclesOnBegin[pid];
       return retVal;
     }
     else
@@ -651,6 +655,7 @@ GCMFinalRet transCoherence::beginLL(int pid, icode_ptr picode)
 
       retVal.ret = SUCCESS;
       retVal.tuid = transState[pid].utid;
+	  cyclesOnBegin[pid] = globalClock;
     }
 
   return retVal;
@@ -684,6 +689,8 @@ struct GCMFinalRet transCoherence::abortLL(thread_ptr pthread, int tid)
 
   transState[pid].state = ABORTING;    
   retVal.ret = SUCCESS;
+
+  cyclesOnAbort[pid] += globalClock - cyclesOnBegin[pid];
   return retVal;
 
 
@@ -782,6 +789,7 @@ struct GCMFinalRet transCoherence::commitLL(int pid, int tid)
       retVal.ret = SUCCESS;
       transState[pid].state = COMMITTED;
       retVal.tuid = transState[pid].utid;
+  	  cyclesOnCommit[pid] += globalClock - cyclesOnBegin[pid];
       return retVal;
     }
     else if(currentCommitter >= 0)

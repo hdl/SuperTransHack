@@ -1,0 +1,11 @@
+#!/bin/bash
+#*** The "#PBS" lines must come before any non-blank non-comment lines ***
+#PBS -l walltime=100:00:00,nodes=1:ppn=1
+# $PBS_O_WORDKIR is current directory where qsub is ran. Results files will be in this directory
+WORKSPACE=$PBS_O_WORKDIR
+# Change following path to location of SESC binary
+SESC=/home/EE653-user3/zmao/SuperTransHack/bin
+echo $WORKSPACE
+cd $WORKSPACE
+$SESC/sesc.trans ../benchmarks/stamp/vacation.mips.tm -c16 -n2 -q90 -u98 -r16384 -t409
+ls | mail -s 'vacation.lazy' maoze365@gmail.com

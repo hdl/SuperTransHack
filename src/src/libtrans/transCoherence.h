@@ -70,6 +70,10 @@ struct tmState{
  */
 class transCoherence{
   public:
+	Time_t cyclesOnCommit[MAX_CPU_COUNT];
+	Time_t cyclesOnAbort[MAX_CPU_COUNT];
+	Time_t cyclesOnNormal[MAX_CPU_COUNT];
+	Time_t cyclesOnBegin[MAX_CPU_COUNT];
     // Constructor
     transCoherence();
     transCoherence(FILE *out, int conflicts, int versioning, int cacheLineSize);
